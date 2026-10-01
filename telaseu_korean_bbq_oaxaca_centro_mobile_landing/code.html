@@ -1,0 +1,535 @@
+<!DOCTYPE html><html class="dark" lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#1d2025", "on-tertiary-container": "#502800", "tertiary": "#ffb77d", "secondary-fixed": "#c4e7ff", "on-primary": "#552100", "on-tertiary-fixed": "#2f1500", "primary-container": "#f97316", "on-tertiary": "#4d2600", "on-primary-fixed": "#341100", "on-primary-container": "#582200", "error": "#ffb4ab", "surface": "#111319", "surface-container-high": "#272a30", "on-background": "#e1e2e9", "primary-fixed-dim": "#ffb690", "surface-dim": "#111319", "on-secondary-fixed": "#001e2c", "surface-container-highest": "#32353a", "inverse-on-surface": "#2e3036", "inverse-surface": "#e1e2e9", "on-error": "#690005", "tertiary-fixed": "#ffdcc3", "outline": "#a78b7d", "secondary-fixed-dim": "#7bd0ff", "primary": "#ffb690", "secondary-container": "#00a6e0", "on-surface": "#e1e2e9", "background": "#111319", "surface-bright": "#36393f", "tertiary-container": "#e68117", "tertiary-fixed-dim": "#ffb77d", "outline-variant": "#584237", "on-error-container": "#ffdad6", "on-tertiary-fixed-variant": "#6e3900", "on-primary-fixed-variant": "#783200", "on-secondary-container": "#00374d", "surface-variant": "#32353a", "error-container": "#93000a", "on-surface-variant": "#e0c0b1", "secondary": "#7bd0ff", "surface-container-low": "#191c21", "surface-container-lowest": "#0b0e13", "on-secondary": "#00354a", "inverse-primary": "#9d4300", "primary-fixed": "#ffdbca", "on-secondary-fixed-variant": "#004c69", "surface-tint": "#ffb690" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-mobile": "1.25rem", "gutter": "1.5rem" }, fontFamily: { "headline-sm": ["Playfair Display"], "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "display-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"] }, fontSize: { "headline-sm": ["22px", { lineHeight: "28px", fontWeight: "500" }], "title-lg": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }], "body-md": ["15px", { lineHeight: "22px", fontWeight: "400" }], "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "body-sm": ["13px", { lineHeight: "18px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "600" }], "headline-md": ["28px", { lineHeight: "36px", fontWeight: "500" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.04em", fontWeight: "600" }], "body-lg": ["17px", { lineHeight: "26px", fontWeight: "400" }], "display-lg-mobile": ["38px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-lg-mobile": ["30px", { lineHeight: "36px", letterSpacing: "0em", fontWeight: "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Menú de navegación" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">menu_open</span></button><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-wider text-on-surface leading-tight">TELASEU</span><span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-[0.2em] -mt-1">Oaxaca · K-BBQ</span></div></div><div class="flex items-center gap-space-sm"><span class="hidden sm:inline font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Experience</span><a class="h-10 px-space-md flex items-center justify-center bg-primary-container text-surface-container-lowest font-label-md text-label-md uppercase tracking-wider rounded-lg shadow-[0_0_16px_rgba(249,115,22,0.35)] active:scale-95 transition-all" data-path="reservations" href="#">Reservar</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-space-xs" src="https://lh3.googleusercontent.com/aida/AEtjO1UCoRO60vxNyJEtQr9QCooJB6Msepc2z67pOs7bGoIeQD8FyN3L3C2wD4JEYzbHvSVUg5HlmcUpi8v7U6avWySZTJe-l0zmsFnK0bx-ySmziMkTMCVvMAL_0DUQnwjanQ1yUcsoMz1gb9YSiaj_ji_Wa4QWT6FdkT2afipftb92kdsUN6WKAur2-F4AWtKQzsZjGcZrggYS2-EgPg5_rdg2q-sy3JdAoIYwcK6gKBiNNTSOO7x_yEtpyPs2l22Bi1zRuUC1eksF"></div></div></header><main class="flex flex-col relative w-full pt-16 pb-36 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest">
+<div class="relative w-full h-[470px]">
+<img alt="Fachada Casona Telaseu Oaxaca" class="w-full h-full object-cover brightness-[0.72] contrast-[1.08]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmxrTExYRv7LduyIK39w0E2a-J1MfeJPtLLR1BMUgDM48uIw6d3RX7-_ClykzI0q-vbsMhgGaoyHTm_8N09TTy6LHTmxWzDygbl3mhfdk1pI_Koqb3g7CHuLUO7YtDrUwDgpRR1ZJKK6-emkSUmaDJCTr6zuOau3JEZHoz8fqsUCexL_rTPGp546n9TcxJOptU6Y0VzbNOUmFnLmwHC_Y_ahU3xj1uKfOtwBx4KMEzFXsE28s4cjGKj4B8nidyBe_TKg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/70 via-transparent to-transparent"></div>
+<!-- Hero Inner Floating Badges & Branding -->
+<div class="absolute inset-x-0 bottom-0 px-gutter-mobile pb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest/90 p-1.5 shadow-xl backdrop-blur-md flex items-center justify-center shrink-0">
+<img alt="Logotipo Telaseu" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjUWQ9VK5oyJzTNT4rEtmWtzI0vvm9GIiZAcvsZAAGsp61dYo4iDgopI5QK1X_XYIz76O6XXf-6fLIsPI-0CLRT7bNL82wkqk_wngYMFZMS7X9Wu2qmrk2GwZS89OAlwhhe0QLF43oLkLJ0DdpW8n6Uq69ClnPce3pexIJEcIC2IDsZwjyXn1PUVnanfnHaabs7gdfxFyIP8RI0MaLdBMlPdRX4H0fOEBEdh8BDZkzx7Vi6JeH52rbSpQY-_OXq_FICg">
+</div>
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high/90 text-tertiary font-label-sm text-label-sm uppercase tracking-widest backdrop-blur-sm self-start shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+              Parrilla Coreana • Oaxaca Centro
+            </span>
+<div class="flex items-center gap-1 text-tertiary-fixed mt-1">
+<span class="font-label-md text-label-md text-primary font-bold">4.9</span>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm">(+1,500 reseñas en Google)</span>
+</div>
+</div>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold leading-tight drop-shadow-md">
+          Auténtico Korean BBQ &amp; Steakhouse en Oaxaca
+        </h1>
+<!-- Direct Actions CTA -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<a class="h-12 w-full flex items-center justify-center gap-2 rounded-xl bg-primary-container text-surface-container-lowest font-label-lg text-label-lg font-bold uppercase tracking-wider shadow-[0_0_20px_rgba(249,115,22,0.4)] active:scale-[0.98] transition-transform" href="#reservar-mesa">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span class="">Reservar Mesa</span>
+</a>
+<a class="h-12 w-full flex items-center justify-center gap-2 rounded-xl bg-surface-container-high/90 text-on-surface hover:text-tertiary font-label-md text-label-md uppercase tracking-wider backdrop-blur-md active:scale-[0.98] transition-transform shadow-md" href="tel:9515161523">
+<span class="material-symbols-outlined text-[18px] text-primary">phone_in_talk</span>
+<span class="">Llamar 951 516 1523</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK INFO STRIP -->
+<section class="w-full bg-surface-container-low px-gutter-mobile py-space-md">
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="flex flex-col items-center justify-center p-space-xs bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary text-[20px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Carbón Real</span>
+<span class="font-title-md text-[13px] text-on-surface font-medium">Yeontan &amp; Fuego</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-xs bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Todos los Días</span>
+<span class="font-title-md text-[13px] text-on-surface font-medium">2:00 PM – 10:00 PM</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-xs bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-[20px]">distance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Ubicación</span>
+<span class="font-title-md text-[13px] text-on-surface font-medium">Colón 321, Centro</span>
+</div>
+</div>
+</section>
+<!-- FILOSOFÍA & AMBIENTE -->
+<section class="w-full px-gutter-mobile py-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="h-px w-6 bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">Casona Oaxaqueña &amp; Seúl</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+        Tradición milenaria entre muros de cantera
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Ubicados en una distinguida casona de la Calle Colón 321, fusionamos la hospitalidad oaxaqueña con la mística del asador coreano. Cada mesa cuenta con extractores de grado arquitectónico de alta gama y parrillas integradas para disfrutar del fuego vivo sin humo en el ambiente.
+      </p>
+</div>
+<!-- Tarjeta Visual Destacada: Flameado en Mesa -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container shadow-2xl">
+<div class="relative h-72 w-full">
+<img alt="Espectáculo de fuego y flameado en mesa en Telaseu" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI2zVab_iqrvsqP2Oxn7nLWD4tT8UUvU2c6QoUUPa396viGUZdWz-8dYw5HwFtb_kynLAfIywPeuDZkMEkdfEkmlde65zbbUV8NVe52XiwvD1WlMJEEHhZUygmPdLpI8yr2_IRI5XOm_QikEPY5Y9hmUdMfxVxcBFQ4guuLvYGM_F9nndkQnQlD7McC-353WeFwZYZjHXGMZyna1NrJUNGGxPBg1UQjb89jjGpuRVgllYWwNEi3twNamC1gdRx42p7XA">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute top-3 right-3 px-space-sm py-1 bg-surface-container-lowest/85 backdrop-blur-md rounded-full flex items-center gap-1.5 shadow-lg">
+<span class="material-symbols-outlined text-primary-container text-[16px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Show de Mesa</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-tertiary">Parrillada al Minuto</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Nuestros maestros parrilleros sellan los cortes con soplete artesanal y carbón vegetal de encino, creando notas caramelizadas y texturas insuperables en vajilla tradicional coreana.
+        </p>
+</div>
+</div>
+</section>
+<!-- MENÚ EDITORIAL COMPACTO (ESTRICTAMENTE SOLO TEXTO, CERO IMÁGENES) -->
+<section class="w-full bg-surface-container-lowest py-space-xl flex flex-col gap-space-md">
+<div class="px-gutter-mobile flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">Cortes &amp; Recetas de Linaje</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Menú Editorial</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Selección curada servida con banchan de cortesía y arroz al vapor.
+      </p>
+</div>
+<!-- Category Pills Horizontal Scroll -->
+<div class="w-full overflow-x-auto no-scrollbar px-gutter-mobile py-space-xs flex items-center gap-2" id="menu-pills">
+<button class="menu-tab-btn active px-space-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-primary-container text-surface-container-lowest font-bold whitespace-nowrap shadow-md transition-all" data-cat="parrilla">
+        Parrilla A La Carte
+      </button>
+<button class="menu-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container-high text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all" data-cat="especialidades">
+        Especialidades
+      </button>
+<button class="menu-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container-high text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all" data-cat="sopas">
+        Sopas &amp; Caldos
+      </button>
+<button class="menu-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container-high text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all" data-cat="bebidas">
+        Bebidas &amp; Soju
+      </button>
+</div>
+<!-- Editorial Text Roster -->
+<div class="px-gutter-mobile flex flex-col divide-y-0 gap-space-sm pt-space-xs" id="menu-items-container">
+<!-- Parrilla Items -->
+<div class="menu-group flex flex-col gap-space-sm" data-group="parrilla">
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1 transition-all active:bg-surface-container-high">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">A5 Wagyu BMS 12</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">와규 등심 · Miyazaki Prefecture (150g)</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$1,999</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Marmoleo legendario grado supremo. Se derrite en contacto con la rejilla caliente. Sal marina de salina cruz y sésamo tostado.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1 transition-all active:bg-surface-container-high">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Royal L.A. Galbi</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">LA 갈비구이 · Prime Short Rib</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$649</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Costilla de res en corte transversal marinada 48 horas en pera asiática, ajo negro y salsa de soya artesanal.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1 transition-all active:bg-surface-container-high">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Chadolbagi</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">차돌박이 · Prime Brisket Curls</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$599</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Láminas delgadas de pecho de res Black Angus de cocción ultra rápida acompañadas de salsa ganjang y chiles toreados.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1 transition-all active:bg-surface-container-high">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Prime Bulgogi Tradicional</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">소불고기 · Ribeye Thin Slices</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$649</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Finísimas tiras de ribeye con cebolla cambray caramelizada, hongos shiitake y reducción de ajonjolí prensado en frío.
+          </p>
+</div>
+</div>
+<!-- Especialidades Items -->
+<div class="menu-group hidden flex-col gap-space-sm" data-group="especialidades">
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Yugi Bibimbap Real</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">유기 비빔밥 · Tazón Bronce Sagrado</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$325</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Servido en auténtico tazón de bronce Yugi artesanal con 7 namul vegetales de temporada oaxaqueña, yema curada y gochujang casero.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Haemul Pajeon</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">해물파전 · Crispy Seafood Pancake</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$295</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Panqueque coreano crujiente con cebollín verde fresco, calamar, camarón silvestre y vinagreta añejada de soya.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Tteokbokki Real de la Casona</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">궁중 떡볶이 · Gungjung Style</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$270</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Pasteles de arroz cilíndricos salteados en salsa dulce-picante con pastel de pescado eomuk y semillas de ajonjolí tostadas.
+          </p>
+</div>
+</div>
+<!-- Sopas Items -->
+<div class="menu-group hidden flex-col gap-space-sm" data-group="sopas">
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Spicy Seafood Jjamppong</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">짬뽕 · Caldo de Fuego Marino</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$355</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Fideos hechos en casa, caldo especiado con chiles coreanos y chile chilhuacle, mejillones frescos, calamar y vegetales crocantes.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Kimchi Jjigae de Cerdo Ibérico</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">김치찌개 · Fermento Añejo</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$310</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Guiso profundo con kimchi madurado en tinaja de barro, panceta tierna, tofu sedoso y caldo madre concentrado.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Sundubu Jjigae</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">순두부찌개 · Caldo Tofu Suave</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$290</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Guiso hirviente de tofu suave artesanal con almejas baby y toque ahumado de gochugaru de primera molienda.
+          </p>
+</div>
+</div>
+<!-- Bebidas Items -->
+<div class="menu-group hidden flex-col gap-space-sm" data-group="bebidas">
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Soju Jinro Chamisul Fresh</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">참이슬 소주 · Destilado Coreano (360ml)</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$239</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            El clásico destilado de arroz filtrado con carbón de bambú. Puro, cristalino y refrescante servido en chupitos fríos.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Makgeolli Artesanal</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">막걸리 · Vino de Arroz Espumoso</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$395</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Fermentado tradicional de textura lechosa, notas dulces y ligera acidez burbujeante. Ideal maridaje para cortes grasos.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-1">
+<div class="flex items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[18px] text-tertiary">Coctel Oaxacoreano (Mezcal &amp; Yuzu)</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">Espadín de Santiago Matatlán + Cítrico Coreano</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">$240</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Mezcal artesanal oaxaqueño, mermelada de yuzu silvestre, licor de jengibre y escarcha de sal de gusano y gochugaru.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERIENCIA FOTOGRÁFICA INTERACTIVA (GRID VERTICAL DE FOTOS REALES) -->
+<section class="w-full px-gutter-mobile py-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="h-px w-6 bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em]">La Experiencia Sensorial</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Vivido en Telaseu</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Un recorrido visual por nuestras mesas de banquete, vajilla patrimonial y cortes prémium.
+      </p>
+</div>
+<!-- Masonry / Two-column Tactile Visual Showcase -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Col 1 -->
+<div class="flex flex-col gap-space-sm">
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group">
+<img alt="Mesa completa con banchan y cortes en Telaseu" class="w-full h-56 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXnqHhzsqn_42vocFgncKMQXz5aBYjSBxdr3GwF11Na9Hz8fj9j5SZrY9dzL7gkLqDDjXx3VqLKl54woyQ1KEBuxsTvQzHssiQ4wTziPOOzRiUCuLpwUov1uTi-MDbzfOznMSrNM-cVyksz2Ryna_2qKRTXTerhq2dskIs-6G2L0iZIdIywp3tPBqNreAjQpIZbdWvUtu0p9WiOeNmoXk-NjYxz1KEUH8cBgah-sftHgyYeySDk2SlMlXSd81UDwMPkw">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[10px] text-tertiary-fixed tracking-wider uppercase font-semibold">El Gran Banquete</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group">
+<img alt="Cortes selectos Wagyu marmoleados" class="w-full h-44 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxzvLHLTnBE5WPvZyRj9lTAv_9W0iA09tjeD_Y6H5zN89j-5jbLD8oaTKa3gQM5BdA7058V8Uua0iN98wOQUsRvqCg9KaAILYtyI3Udk2Ofh5nYlCr5bFGsXjgSAVWsMUJLrQRikBqHGkBjyUxWBiXXJoQ79CSXSCIYDaoMc1B_9wFBJLM6BSTRYOBWZZrOmrQs1FPUA6DMb0Zt_E1QNpzvR4t7bCyyc_uBADatVT_CNT1fwkHPNaP4LEt6MbN0zSOuw">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[10px] text-tertiary-fixed tracking-wider uppercase font-semibold">Cortes BMS 12</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group">
+<img alt="Coctelería y bebidas exclusivas Telaseu" class="w-full h-48 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJMZYM5Io4UuEWp9NWSeqy3y9VhDgQpeAsfgaIpcFpAzdEuegX4nD_Rzpo7LB1YXw2CNZALb_Wx_aUUNY4oKg3WrvVUUviejT6BXFKYbsAcP8Qn5UTyOF-XYOxJQoPRcC8DKCRu0AGsX4KCOvcANqHotBQd2jSz0tNH1yqsbd61neWrSJpLMlrBd7SIA3QnDZXW3YNNmiMmWH7cnfqy8LfPgXPtUR-5gjPeyw3KH_Vw8hpy8EqFB7EHfSIPGwvG9pVSg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[10px] text-tertiary-fixed tracking-wider uppercase font-semibold">Mixología &amp; Soju</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group"><img alt="Tteokbokki Artesanal pastel de arroz coreano" class="w-full h-52 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABjNtUaK_KNYMVj4okSOn3lkdzvSQKsAt3yO3XYFFTCylC00ZQoYv5PVCz4evnzD7_ZBA02qK6iWXB1h0U9jvlCGfmQQ-6jqCpbNd47x518EufY0TcMBf11W2uAT34yMIl_0kcFQiELptxdTlrjvQuAt_KAXcjzxJv_Ee0Q_5Hfswi9DG-72WNDIqE4kh1p9GHgAJqo6sdHx6RzJpyEjiyydh066oRxXVpP6qU1a8Fmy9840opYMVLdZZ3k-MoXYVGlQ"><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5"><span class="font-label-sm text-[10px] text-tertiary-fixed tracking-wider uppercase font-semibold">Tteokbokki Artesanal</span></div></div></div>
+<!-- Col 2 -->
+<div class="flex flex-col gap-space-sm">
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group">
+<img alt="Vajilla tradicional de bronce Yugi" class="w-full h-44 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7WOgcWr7LdvMm5gtRXOuaFEGjwGqJtuFPq8gI6K2MZjX6cT1cmxnpVA19giwTX0tXKoweuH2mu0JK-5NFebNGi4_TbTvBL2ySOiy-tJzsd8hUx1izDzh_sCyLvNR0-RURXcxHivX2MlJ85nRMxLu0ABXRiCLCGgOuKbE0nJ_PT5llM5Vgtxd4nirlHt6qm05fnaIAwdYcAXSacDtgVCnN4nAUCoHPhaSSOUVuKg0JieYo_zsiuD7gui1uTU_1fuJCrw">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[10px] text-tertiary-fixed tracking-wider uppercase font-semibold">Bronce Yugi Artesanal</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group">
+<img alt="Flameado con fuego vivo en mesa" class="w-full h-56 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD5M4WjmDOWPJHJvd5CRHArraviHrnOCcKW1NdIyQxtZAvyPdd8aqS5nITbMnt5vEMaGlf_3I4I9nSyrLZyjOciqD9_v1f19RXAFsMdWhXWGe-u7Qv0ZFMZsYzsye_-VM1Ot3TdIGTlTccTJbOSsQJMFgR-DtjB_UBE-7xP4p4VZDltviWl55y7W8brUKByDPneFF8AoiJwHID77LzGGfPtmlgTMWpw7_bop_1CVTU0kz2LmdDj1YL0nAxmucHQ9cK2Q">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[10px] text-tertiary-fixed tracking-wider uppercase font-semibold">Fuego al Momento</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group">
+<img alt="Letrero neón nocturno Telaseu en el patio colonial" class="w-full h-48 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCisNHfNWMmgj2S9dBZoAeZU7zY3HkC5UtqB8YIw_ojFhFFDfnhMMkhlEQM5oM4fHH0n77F9B-RBOPj7t09DQVX7uyl4WEuWJhxeSUuCBLACTh3yg2cTyWR6GgaPwtgBQHwVU6rpDkFu5c20ZlaNA_wv_RF2WUjqdU3KBp7dNH1nUa7Wo0Drlwd0YxjXh8Vx7IOzcVh0g41S0qdK5wteO9nknOywgmnk1mH04l2o6UckRsc--01to6g37DThNFOP2zNiA">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[10px] text-secondary tracking-wider uppercase font-semibold">Atmósfera Nocturna</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group"><img alt="Kimbap Clásico rollos tradicionales" class="w-full h-52 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtVY8SLS803_tDErLC4COGsD6OvdKbCHmAEjzStgFZtA3BMLD-MLCnpa9eCqbK5gkskZ2waaQQ0I2DFrHlI-zlE_Kj0TaRRcx1BXqaOZaipO2iFBiE7NKgGhaxHpDa9pmJteQQEogQzEAOXyRdHkm5DiRNK5RXt4WOYucYCobDUWN1PtmfynD6Ja0rCcGvlTm3Qn4Fk3f3WDkVBIEl3ZVCHLLi4_055gBFN_2bs3NAvnZTrRyBIexNeL-I4DgcNuizUg"><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5"><span class="font-label-sm text-[10px] text-tertiary-fixed tracking-wider uppercase font-semibold">Kimbap Clásico</span></div></div></div>
+</div>
+</section>
+<!-- RESERVAS MÓVIL SIMPLIFICADO -->
+<section class="w-full px-gutter-mobile py-space-xl bg-surface-container-low flex flex-col gap-space-lg scroll-mt-20" id="reservar-mesa">
+<div class="flex flex-col gap-space-xs text-center items-center">
+<span class="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[22px]">table_bar</span>
+</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Reserva Inmediata</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+        Asegura tu parrilla en el patio colonial. Confirmación rápida vía WhatsApp o llamada telefónica.
+      </p>
+</div>
+<!-- Reservation Card Form -->
+<div class="w-full bg-surface-container p-space-lg rounded-2xl shadow-xl flex flex-col gap-space-md">
+<!-- Stepper Personas -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Número de Personas</label>
+<div class="grid grid-cols-4 gap-2" id="guest-selector">
+<button class="guest-btn active py-2.5 rounded-lg bg-primary-container text-surface-container-lowest font-title-md text-title-md font-bold transition-all" type="button">2</button>
+<button class="guest-btn py-2.5 rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md font-bold hover:bg-surface-container-highest transition-all" type="button">4</button>
+<button class="guest-btn py-2.5 rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md font-bold hover:bg-surface-container-highest transition-all" type="button">6</button>
+<button class="guest-btn py-2.5 rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md font-bold hover:bg-surface-container-highest transition-all" type="button">8+</button>
+</div>
+</div>
+<!-- Fecha y Horario (Selector Táctil Rápido) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="res-fecha">Día</label>
+<select class="h-11 px-3 bg-surface-container-high text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary appearance-none" id="res-fecha">
+<option>Hoy (Inmediato)</option>
+<option>Mañana</option>
+<option>Viernes de Fuego</option>
+<option>Sábado Nocturno</option>
+<option>Domingo Familiar</option>
+</select>
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group"><img alt="Tteokbokki Artesanal pastel de arroz coreano" class="w-full h-52 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABjNtUaK_KNYMVj4okSOn3lkdzvSQKsAt3yO3XYFFTCylC00ZQoYv5PVCz4evnzD7_ZBA02qK6iWXB1h0U9jvlCGfmQQ-6jqCpbNd47x518EufY0TcMBf11W2uAT34yMIl_0kcFQiELptxdTlrjvQuAt_KAXcjzxJv_Ee0Q_5Hfswi9DG-72WNDIqE4kh1p9GHgAJqo6sdHx6RzJpyEjiyydh066oRxXVpP6qU1a8Fmy9840opYMVLdZZ3k-MoXYVGlQ"><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5"><span class="font-label-sm text-[10px] text-tertiary-fixed tracking-wider uppercase font-semibold">Tteokbokki Artesanal</span></div></div></div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="res-hora">Hora</label>
+<select class="h-11 px-3 bg-surface-container-high text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary appearance-none" id="res-hora">
+<option>14:00 PM</option>
+<option>16:00 PM</option>
+<option>18:00 PM</option>
+<option selected="">20:00 PM</option>
+<option>21:30 PM</option>
+</select>
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group"><img alt="Kimbap Clásico rollos tradicionales" class="w-full h-52 object-cover transition-transform duration-300 active:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtVY8SLS803_tDErLC4COGsD6OvdKbCHmAEjzStgFZtA3BMLD-MLCnpa9eCqbK5gkskZ2waaQQ0I2DFrHlI-zlE_Kj0TaRRcx1BXqaOZaipO2iFBiE7NKgGhaxHpDa9pmJteQQEogQzEAOXyRdHkm5DiRNK5RXt4WOYucYCobDUWN1PtmfynD6Ja0rCcGvlTm3Qn4Fk3f3WDkVBIEl3ZVCHLLi4_055gBFN_2bs3NAvnZTrRyBIexNeL-I4DgcNuizUg"><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-2.5"><span class="font-label-sm text-[10px] text-tertiary-fixed tracking-wider uppercase font-semibold">Kimbap Clásico</span></div></div></div>
+</div>
+<!-- Nombre y Teléfono -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="res-nombre">Nombre Completo</label>
+<input class="h-11 px-3.5 bg-surface-container-high text-on-surface placeholder:text-outline rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="res-nombre" placeholder="Ej. Alejandro Ramírez" type="text">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="res-telefono">Teléfono / WhatsApp</label>
+<input class="h-11 px-3.5 bg-surface-container-high text-on-surface placeholder:text-outline rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="res-telefono" placeholder="Ej. 951 000 0000" type="tel">
+</div>
+<!-- Submit CTA -->
+<button class="mt-space-xs h-13 py-3 w-full flex items-center justify-center gap-2 rounded-xl bg-primary-container text-surface-container-lowest font-label-lg text-label-lg font-bold uppercase tracking-wider shadow-[0_0_24px_rgba(249,115,22,0.45)] active:scale-[0.98] transition-all" id="confirm-reserve-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="">Confirmar Solicitud</span>
+</button>
+<!-- Feedback box hidden by default -->
+<div class="hidden p-space-sm bg-surface-container-highest rounded-lg flex items-center gap-space-sm animate-fade-in" id="reserve-success-msg">
+<span class="material-symbols-outlined text-tertiary text-[20px]">task_alt</span>
+<span class="font-body-sm text-body-sm text-on-surface">¡Solicitud recibida! Te contactaremos vía WhatsApp para confirmar tu parrilla.</span>
+</div>
+</div>
+</section>
+<!-- UBICACIÓN, HORARIOS Y ACCESO CON 1 TOQUE -->
+<section class="w-full px-gutter-mobile py-space-xl flex flex-col gap-space-md bg-surface">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">Encuéntranos en el Centro</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Casona Telaseu</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        A tan sólo 4 cuadras del Zócalo de Oaxaca, sobre la tradicional Calle de Colón.
+      </p>
+</div>
+<!-- Map Trigger Card with Static Visual Coordinates -->
+<div class="w-full rounded-2xl overflow-hidden bg-surface-container shadow-xl flex flex-col">
+<div class="w-full h-52 bg-cover bg-center relative flex items-center justify-center" data-location="Calle Colón 321, Centro, Oaxaca, Mexico">
+<div class="absolute inset-0 bg-surface-container-lowest/40 backdrop-blur-[1px]"></div>
+<!-- Glowing Map Pin Indicator -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center shadow-[0_0_20px_rgba(249,115,22,0.6)] animate-bounce">
+<span class="material-symbols-outlined text-[26px]">restaurant</span>
+</div>
+<span class="px-space-sm py-1 mt-1 rounded-md bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-md shadow-md">
+            Telaseu K-BBQ
+          </span>
+</div>
+</div>
+<!-- Action Buttons 1-Touch -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Calle Colón 321</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Centro Histórico, 68000 Oaxaca de Juárez, Oax.</span>
+</div>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-tertiary font-label-sm text-[11px] font-bold uppercase tracking-wider">Abierto</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<a class="h-11 flex items-center justify-center gap-1.5 rounded-lg bg-surface-container-high text-secondary hover:text-secondary-fixed font-label-md text-label-md uppercase tracking-wider active:scale-[0.98] transition-all" href="https://maps.google.com/?q=Calle+Colón+321,+Centro,+Oaxaca" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span class="">Google Maps</span>
+</a>
+<a class="h-11 flex items-center justify-center gap-1.5 rounded-lg bg-surface-container-high text-primary hover:text-primary-fixed font-label-md text-label-md uppercase tracking-wider active:scale-[0.98] transition-all" href="tel:9515161523">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="">Llamar Ahora</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Horarios Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">watch_later</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-[14px] text-on-surface font-medium">Horario de Servicio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Miércoles a Domingo · 14:00 - 23:00 hrs</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_rgba(249,115,22,0.8)]"></span>
+</div>
+</section>
+</div>
+<script>
+  // Menu Category Filtering Interaction
+  document.querySelectorAll('.menu-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Toggle button styles
+      document.querySelectorAll('.menu-tab-btn').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-surface-container-lowest', 'font-bold');
+        b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      btn.classList.add('bg-primary-container', 'text-surface-container-lowest', 'font-bold');
+
+      // Toggle item groups
+      const category = btn.getAttribute('data-cat');
+      document.querySelectorAll('.menu-group').forEach(group => {
+        if (group.getAttribute('data-group') === category) {
+          group.classList.remove('hidden');
+          group.classList.add('flex');
+        } else {
+          group.classList.add('hidden');
+          group.classList.remove('flex');
+        }
+      });
+    });
+  });
+
+  // Guest selector interaction
+  document.querySelectorAll('.guest-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.guest-btn').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-surface-container-lowest');
+        b.classList.add('bg-surface-container-high', 'text-on-surface');
+      });
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+      btn.classList.add('bg-primary-container', 'text-surface-container-lowest');
+    });
+  });
+
+  // Simple feedback on Reservation submission
+  const resBtn = document.getElementById('confirm-reserve-btn');
+  const successBox = document.getElementById('reserve-success-msg');
+  if (resBtn && successBox) {
+    resBtn.addEventListener('click', () => {
+      resBtn.classList.add('opacity-80', 'pointer-events-none');
+      resBtn.innerText = 'Enviando...';
+      setTimeout(() => {
+        resBtn.innerText = 'Mesa Solicitada';
+        successBox.classList.remove('hidden');
+      }, 700);
+    });
+  }
+</script><footer class="w-full mt-auto bg-surface-container-lowest/90 px-gutter-mobile py-space-lg"><div class="flex flex-col gap-space-sm"><div class="flex items-start justify-between gap-space-sm"><div class="flex flex-col"><span class="font-headline-sm text-title-md text-tertiary">Telaseu Casona</span><p class="font-body-sm text-body-sm text-on-surface-variant">Colón 321, Centro Histórico, Oaxaca</p><p class="font-label-sm text-label-sm text-outline tracking-wider uppercase mt-space-xs">Mié – Dom: 14:00 – 23:00</p></div><a aria-label="Llamar al restaurante" class="w-11 h-11 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary hover:text-secondary-fixed transition-colors" href="tel:+529511234567"><span class="material-symbols-outlined text-[20px]">call</span></a></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-14 transition-colors text-primary" data-path="experience" href="#"><span class="material-symbols-outlined text-[22px]">outdoor_grill</span><span class="font-label-sm text-[10px] mt-0.5 tracking-tight">Cortes</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-[10px] mt-0.5 tracking-tight">Menú</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="reservations" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-sm text-[10px] mt-0.5 tracking-tight">Reservar</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="cellar-mezcal" href="#"><span class="material-symbols-outlined text-[22px]">wine_bar</span><span class="font-label-sm text-[10px] mt-0.5 tracking-tight">Bodega</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="location-hours" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-[10px] mt-0.5 tracking-tight">Casona</span></a></div></nav>
+
+</body></html>
